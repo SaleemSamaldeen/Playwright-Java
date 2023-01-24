@@ -13,7 +13,7 @@ public class SelectDropDown {
     private Page page;
 
     @Test
-    public void selectDropdownInPage() throws InterruptedException {
+    public void selectDropdownInPage() {
         playwright = Playwright.create();
         browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setChannel("chrome").setHeadless(false));
 

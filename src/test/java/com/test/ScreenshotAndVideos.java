@@ -52,6 +52,6 @@ public class ScreenshotAndVideos {
 
         //To save video
         video.saveAs(Paths.get("videos/CreateLead/testVideo_mp4"));
-        video.delete();
+        video.delete();  /* to delete a copy of default created video */
     }
 }
