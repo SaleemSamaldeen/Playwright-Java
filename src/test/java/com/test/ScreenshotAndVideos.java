@@ -51,7 +51,7 @@ public class ScreenshotAndVideos {
         page.close();
 
         //To save video
-        video.saveAs(Paths.get("videos/CreateLead/testVideo_mp4"));
+        video.saveAs(Paths.get("videos/CreateLead/testVideo.mp4"));
         video.delete();  /* to delete a copy of default created video */
     }
 }

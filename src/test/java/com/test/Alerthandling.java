@@ -1,12 +1,11 @@
 package com.test;
 
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.BrowserType;
-import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
+import com.microsoft.playwright.Dialog;
+import com.microsoft.playwright.*;
 import org.testng.annotations.Test;
 
 import java.awt.*;
+import java.util.function.Consumer;
 
 public class Alerthandling {
 
@@ -69,7 +68,11 @@ public class Alerthandling {
 
         page.locator("//h5[text()=' Alert (Simple Dialog)']//following::span[2]").click();
         page.locator("//h5[text()=' Alert (Confirm Dialog)']//following::span[2]").click();
-        
+
+        Consumer<Dialog> onDialogAction = dialog -> dialog.dismiss();
+
+        page.offDialog(onDialogAction);
+
         page.locator("//h5[text()=' Alert (Prompt Dialog)']//following::span[2]").click();
 
         playwright.close();
