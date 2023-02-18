@@ -1,4 +1,4 @@
-package com.test;
+package com.test.ui;
 
 import com.microsoft.playwright.*;
 import org.testng.annotations.Test;

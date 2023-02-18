@@ -1,4 +1,4 @@
-package com.test;
+package com.test.ui;
 
 import com.microsoft.playwright.*;
 import org.testng.annotations.Test;
@@ -34,6 +34,8 @@ public class HandleFrames {
         page.type("//input[@id='login-password']","3457576545635345");
 
         page.click("//button[contains(@class,'login-submit')]");
+
+        page.locator("").hover();
 
         page.close();
 
