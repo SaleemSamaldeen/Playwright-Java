@@ -23,7 +23,7 @@ public class SelectDropDown {
         page.navigate("http://leaftaps.com/opentaps");
         page.locator("input#username").type("demosalesmanager");
         page.locator("input#password").type("crmsfa");
-        page.click("//input[@type='submit']");
+        page.click("//input[@type='sub  mit']");
         page.click("text=CRM/SFA");
         page.click("text=Leads");
         page.click("text=Create Lead");

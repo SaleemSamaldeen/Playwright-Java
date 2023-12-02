@@ -33,7 +33,6 @@ public class Mousehover {
 
         page.locator("//a[text()='Powerbank']").click();
 
-
         page.locator("//div[text()='Electronics']").dblclick();
 
 
